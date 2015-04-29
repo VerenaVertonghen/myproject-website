@@ -1,0 +1,24 @@
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-size: inherit;
+	font-family: $regular-font;
+	cursor: pointer;
+	padding: 20px 40px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	color:$dark !important;
+	background:$mint;
+	border:none;
+
+	&:hover{
+		background: lighten($mint,5%);
+		border:none;
+	}
+}

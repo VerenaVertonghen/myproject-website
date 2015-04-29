@@ -1,0 +1,27 @@
+@mixin my-padding(){
+	padding: 2em 1em;
+}
+
+#about-me{
+	@include outer-container();
+	@include my-padding();
+}
+
+#my-skills{
+	@include outer-container();
+	@include my-padding();
+	text-align:center;
+}
+
+
+#my-blog{
+	@include outer-container();
+	@include my-padding();
+	text-align:right;
+}
+
+#my-work{
+	@include outer-container();
+	@include my-padding();
+	text-align:center;
+}

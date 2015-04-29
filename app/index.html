@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="wrapper-for-content-outside-of-footer">
+      <!-- <div ng-include="'views/index-content.html'"></div> -->
+      <header class="centered-navigation">
+        <div class="centered-navigation-wrapper">
+          <a href="index.html" class="mobile-logo">
+            <img src="images/pattern.png" alt="Logo image">
+          </a>
+          <a href="" class="centered-navigation-menu-button">MENU</a>
+          <ul class="centered-navigation-menu">
+            <li class="nav-link "><a href="#my-skills">My skills</a></li>
+            <li class="nav-link">
+              <a class="top-icon" id="active-link" href="index.html">About me</a>
+              <!-- <a href="index.html" class="logo">
+                <img src="icons/logo.png" alt="Logo image">
+              </a> -->
+            </li>
+            <li class="nav-link"><a href="#my-work">My work</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="js-parallax-window" class="parallax-window">
+        <div class="parallax-static-content">
+          <!-- <a href="" class="hero-logo wow bounceIn"><img src="images/pattern.png" alt="me"></a> -->
+          <h1>Tagline</h1>
+        </div>
+        <div id="js-parallax-background" class="parallax-background"></div>
+      </div>
+      <br>
+      <div id="about-me" class="wow slideInLeft">
+        <h1>Title</h1>
+        <p>Semiotics meditation cray fanny pack Shoreditch. Twee tattooed artisan irony, drinking vinegar banh mi 90's hashtag blog cold-pressed normcore ennui ethical. Vice pork belly bitters meditation migas.</p>
+        <a href="#" class="btn">Button</a>
+      </div><!--about-me-->
+      <div id="my-blog" class="wow slideInRight">
+        <h1>Title</h1>
+        <p>Semiotics meditation cray fanny pack Shoreditch. Twee tattooed artisan irony, drinking vinegar banh mi 90's hashtag blog cold-pressed normcore ennui ethical. Vice pork belly bitters meditation migas.</p>
+        <a href="#" class="btn">Button</a>
+      </div><!--my-blog-->
+      <div id="my-skills">
+        <h1 class="wow bounceIn" href="#my-skills">Title</h1>
+        <div class="skill-items">
+          <a href="#" class="grid-item grid-item-image wow slideInLeft">
+            <img src="images/pattern.png" alt="code">
+            <h2>Title</h2>
+            <p>Trust fund before they sold out bitters 3 wolf moon asymmetrical plaid messenger bag chillwave Blue Bottle, retro chambray Banksy.</p>
+          </a>
+          <a href="#" class="grid-item grid-item-image wow slideInRight">
+            <img src="images/pattern.png" alt="code">
+            <h2>Title</h2>
+            <p>Pitchfork twee organic, freegan hella drinking vinegar High Life selvage heirloom photo booth meh. Portland food truck sustainable, swag High Life gastropub readymade mumblecore.</p>
+          </a>
+          <a href="#" class="grid-item grid-item-image wow slideInLeft">
+            <img src="images/pattern.png" alt="code">
+            <h2>Title</h2>
+            <p>Cred pop-up flannel stumptown deep v, authentic Intelligentsia hashtag. 8-bit fap cornhole, Marfa Bushwick swag Austin Tumblr narwhal. </p>
+          </a>
+        </div>
+      </div>
+    </div><!-- wrapper-for-content-outside-of-footer -->
+    <footer>
+      <div class="social-div">
+        <!-- <ul class="social-ul">
+          <li><a href="https://github.com/VerenaVertonghen"><img src="iconset/social/github42.png" class=""></a></li>
+          <li><a href="https://www.linkedin.com/profile/view?id=380186747&trk=nav_responsive_tab_profile_pic"><img src="iconset/social/linkedin42.png" class=""></a></li>
+          <li><a href="https://twitter.com/V_Verenaaa"><img src="iconset/social/twitter42.png" class=""></a></li>
+          <li><a href="https://www.youtube.com/channel/UCnrbC-hpsqCHIlL-hRllmEQ"><img src="iconset/social/youtube42.png" class="footer-icon"></a></li>
+          <li><a href="http://www.pinterest.com/vvertonghen/"><img src="iconset/social/pinterest42.png" class=""></a></li>
+        </ul> -->
+      </div>
+    </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <script src="scripts/parallax.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var menu = $('.centered-navigation-menu');
+        var menuToggle = $('.centered-navigation-menu-button');
+        var signUp = $('.sign-up');
+
+        $(menuToggle).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle(function(){
+            if(menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+          });
+        });
+      });
+    </script>
+
+    <script src="scripts/wow.js"></script>
+    <script>
+     new WOW().init();
+    </script>
+</body>
+</html>
