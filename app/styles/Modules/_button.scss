@@ -1,5 +1,7 @@
 /* General button style (reset) */
-.btn {
+
+
+@mixin my-button($text, $background){
 	border: none;
 	font-size: inherit;
 	font-family: $regular-font;
@@ -13,12 +15,19 @@
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	color:$dark !important;
-	background:$mint;
-	border:none;
+	color:$text !important;
+	background:$background;
+	//border:none;
+	@include my-shadow($background);
+	@include rounded($base-border-radius);
+
 
 	&:hover{
-		background: lighten($mint,5%);
+		background: lighten($background,10%);
 		border:none;
 	}
+}
+
+.btn {
+	@include my-button($light, $positive);
 }

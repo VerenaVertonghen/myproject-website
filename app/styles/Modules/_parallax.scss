@@ -30,9 +30,79 @@ $parallax-background-height: $parallax-window-height * 1.5;
 }
 
 .parallax-background {
-  background: url("../../images/pattern.png") repeat;
+  //background: url("../../images/photography/pic1.jpg") repeat;
   background-size: cover;
-  background-color: $mint;
+  background-color: $dark;
+  background-position: top;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 4;
+  width: 100%;
+}
+
+
+.parallax-window2 {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: $dark;
+    font-size: 3.5em;
+    margin-bottom: 10em;
+  }
+}
+
+.parallax-static-content2 {
+  //color: #9A9A8A;
+  color: $light;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background2 {
+  background: url("../../images/photography/pic1.jpg") repeat;
+  background-size: cover;
+  background-color: $dark;
+  background-position: top;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 4;
+  width: 100%;
+}
+
+
+
+.parallax-window3 {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: $dark;
+    font-size: 3.5em;
+    margin-bottom: 10em;
+  }
+}
+
+.parallax-static-content3 {
+  // color: #9A9A8A;
+  color: $light;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background3 {
+  background: url("../../images/photography/pic1.jpg") repeat;
+  // background: url("../../images/pattern/flyers.png") repeat;
+  background-size: cover;
+  background-color: $dark;
   background-position: top;
   height: $parallax-background-height;
   left: 0;

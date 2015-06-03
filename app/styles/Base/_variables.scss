@@ -1,13 +1,6 @@
 /* VARIABLES
 -------------------------*/
 
-// My Colours
-//Primary colours
-$mint: 						#c7ffea;
-
-//Secondary colours
-$lemon: 					#ebff3b;
-
 // Color swatches FLAT UI
 $turquoise:                 #1abc9c;
 $green-sea:                 #16a085;
@@ -33,19 +26,22 @@ $pumpkin:                   #d35400;
 $alizarin:                  #e74c3c;
 $pomegranate:               #c0392b;
 
-$clouds:                    #ecf0f1;
-$silver:                    #bdc3c7;
+$clouds:                    #f5f7fa;
+$silver:                    #e6e9ed;
 
-$concrete:                  #95a5a6;
-$asbestos:                  #7f8c8d;
+$concrete:                  #656d78;
+$asbestos:                  #434a54;
 
-// Brand colors
-$primary:             		$wet-asphalt;
-$secondary:           		$turquoise;
-$success:             		$emerald;
-$warning:             		$sun-flower;
-$danger:              		$alizarin;
-$info:                		$peter-river;
+//Color swatches FLAT UI 2
+$deep-sea:                  #112539;
+$grapefruit:                #da4453;
+$mint:                      #37bc9b;
+$lemon:                     #fbcf61;
+$strawberry:                #EB4D5C;
+$melon:                     #A6D6A1;
+$aubergine:                 #3C3865;
+$light-chrome:              darken($silver,10%);
+$chrome:                    darken($silver,30%);
 
 // Social colors
 $social-pinterest:          #cb2028;
@@ -58,10 +54,21 @@ $social-twitter:            #00bdef;
 //Neutral colours
 $white: 					#FFFFFF;
 $black: 					#000000;
-$dark: 						$midnight-blue;
 $gray:                      $concrete;
 $gray-light:                $silver;
 $light: 					$clouds;
+
+// Brand colors
+$dark:                      $deep-sea !default;
+$positive:                  $green-sea !default;
+$light:                     $white !default;
+$stable:                    $clouds !default;
+$calm:                      $silver !default;
+$balanced:                  $green-sea !default;
+$energized:                 $lemon !default;
+$assertive:                 $grapefruit !default;
+$royal:                     $wisteria !default;
+
 
 // Background Color
 $base-background-color: 	$white;
@@ -75,8 +82,6 @@ $base-link-color: 			$dark;
 $hover-link-color: 			darken($base-accent-color, 20);
 $base-button-color: 		$base-link-color;
 $hover-button-color: 		$hover-link-color;
-
-
 
 // Breakpoints
 $medium-screen: 			em(640);
@@ -114,7 +119,7 @@ $base-line-height: 			1.5;
 $header-line-height: 		1.25;
 
 // Other Sizes
-$base-border-radius: 		3px;
+$base-border-radius: 		4px;
 $base-spacing: 				$base-line-height * 1em;
 $base-z-index: 				0;
 
