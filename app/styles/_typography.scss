@@ -1,8 +1,20 @@
 /* TYPOGRAPHY
 -------------------------*/
-
-#tagline{
-	color: $white;
+@mixin tagline($color){
+	color: $color;
 	font-family:$light-font;
 	font-size:2em;
+}
+
+.tagline{
+	@include tagline($light);
+}
+
+.tagline-pos{
+	@include tagline($positive);
+}
+
+.emphasis{
+	color:$positive;
+	//font-family:$regular-font;
 }
