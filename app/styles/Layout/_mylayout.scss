@@ -19,6 +19,13 @@
   text-align:center;
 }
 
+#final{
+  @include outer-container();
+  //@include my-padding();
+  padding-top:2em;
+  text-align:center;
+}
+
 #video{
 	@include outer-container();
 	@include my-padding();
@@ -51,5 +58,5 @@
 }
 
 .footer-icon{
-  width: 2.5em;
+  width: 2.7em;
 }

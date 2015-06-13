@@ -57,12 +57,12 @@ a {
 
   &:hover {
     color: $base-link-color;
-    border-bottom: 2px solid $mint;
+    // border-bottom: 2px solid $mint;
   }
 
   &:active, &:focus, &:visited {
     color: $base-link-color;
-    outline: none;
+    // outline: none;
   }
 }
 

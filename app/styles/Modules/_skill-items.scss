@@ -34,7 +34,7 @@
     border-left: $grid-item-border-size /2 solid $grid-items-background;
     border-right: $grid-item-border-size /2 solid $grid-items-background;
     text-align: center;
-    cursor: pointer;
+    //cursor: pointer;
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);

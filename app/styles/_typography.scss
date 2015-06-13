@@ -3,7 +3,7 @@
 @mixin tagline($color){
 	color: $color;
 	font-family:$light-font;
-	font-size:2em;
+	font-size:2em !important;
 }
 
 .tagline{
@@ -12,6 +12,10 @@
 
 .tagline-pos{
 	@include tagline($positive);
+}
+
+.tagline-dark{
+	@include tagline($dark);
 }
 
 .emphasis{

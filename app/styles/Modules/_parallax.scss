@@ -1,8 +1,12 @@
-$parallax-window-height: 30em;
+$parallax-window-height: 40em;
 $parallax-background-height: $parallax-window-height * 1.5;
 
 @mixin dark(){
   -webkit-filter: brightness(50%);
+}
+
+@mixin parallax-pad(){
+  padding: 6em 2em;
 }
 
 .hero-logo img {
@@ -28,7 +32,7 @@ $parallax-background-height: $parallax-window-height * 1.5;
 
 .parallax-static-content {
   color: #9A9A8A;
-  padding: 8em 0;
+  @include parallax-pad();
   position: relative;
   z-index: 9;
 }
@@ -62,15 +66,20 @@ $parallax-background-height: $parallax-window-height * 1.5;
 .parallax-static-content2 {
   //color: #9A9A8A;
   color: $light;
-  padding: 8em 0;
+  @include parallax-pad();
   position: relative;
   z-index: 9;
+  text-align: left;
+  width:100%;
+  @include media($large-screen) {
+    width: 60%;
+  }
 }
 
 .parallax-background2 {
   // background: url("../../images/photography/pic1.jpg") repeat;
   // background: url("../../images/photography/pic5.jpg") repeat;
-  background: url("images/photography/pic5.jpg") repeat;
+  background: url("../images/pattern/banner.png") repeat;
   @include dark();
   background-size: cover;
   background-color: $dark;
@@ -100,15 +109,16 @@ $parallax-background-height: $parallax-window-height * 1.5;
 .parallax-static-content3 {
   // color: #9A9A8A;
   color: $light;
-  padding: 8em 0;
+  @include parallax-pad();
   position: relative;
   z-index: 9;
+  //text-align: left;
 }
 
 .parallax-background3 {
   // background: url("../../images/photography/pic1.jpg") repeat;
   // background: url("../../images/pattern/flyers.png") repeat;
-  background: url("images/pattern/flyers.png") repeat;
+  background: url("../images/pattern/flyers.png") repeat;
   @include dark();
   // opacity: 0.9;
   // filter: alpha(opacity=90); /* For IE8 and earlier */
