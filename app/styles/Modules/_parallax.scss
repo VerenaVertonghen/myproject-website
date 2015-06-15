@@ -2,7 +2,12 @@ $parallax-window-height: 40em;
 $parallax-background-height: $parallax-window-height * 1.5;
 
 @mixin dark(){
-  -webkit-filter: brightness(50%);
+  $value:0.5;
+  filter: brightness($value);
+  -webkit-filter: brightness($value);
+  -moz-filter: brightness($value);
+  -o-filter: brightness($value);
+  -ms-filter: brightness($value);
 }
 
 @mixin parallax-pad(){
@@ -18,7 +23,8 @@ $parallax-background-height: $parallax-window-height * 1.5;
 }
 
 .parallax-window {
-  max-height: $parallax-window-height;
+  // max-height: $parallax-window-height;
+  max-height: 80em;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -32,13 +38,16 @@ $parallax-background-height: $parallax-window-height * 1.5;
 
 .parallax-static-content {
   color: #9A9A8A;
-  @include parallax-pad();
+  padding: 10em 2em;
+  //@include parallax-pad();
   position: relative;
   z-index: 9;
 }
 
 .parallax-background {
-  //background: url("../../images/photography/pic1.jpg") repeat;
+  background: url("../images/photography/phone.jpg") repeat;
+  // background: url("../images/photography/smile.jpg") repeat;
+  @include dark();
   background-size: cover;
   background-color: $dark;
   background-position: top;
@@ -66,7 +75,9 @@ $parallax-background-height: $parallax-window-height * 1.5;
 .parallax-static-content2 {
   //color: #9A9A8A;
   color: $light;
-  @include parallax-pad();
+  // @include parallax-pad();
+  @include outer-container();
+  padding: 10em 1em;
   position: relative;
   z-index: 9;
   text-align: left;
@@ -79,7 +90,9 @@ $parallax-background-height: $parallax-window-height * 1.5;
 .parallax-background2 {
   // background: url("../../images/photography/pic1.jpg") repeat;
   // background: url("../../images/photography/pic5.jpg") repeat;
-  background: url("../images/pattern/banner.png") repeat;
+  // background: url("../images/pattern/banner.png") repeat;
+  // background: url("../images/photography/phone.jpg") repeat;
+  background: url("../images/photography/devicesclose.jpg") repeat;
   @include dark();
   background-size: cover;
   background-color: $dark;

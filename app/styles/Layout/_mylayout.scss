@@ -26,7 +26,22 @@
   text-align:center;
 }
 
+#admin{
+  @include outer-container();
+  @include my-padding();
+  //padding-top:2em;
+  padding-left:1em;
+  padding-right:3em;
+  text-align: right;
+  @include media($large-screen) {
+    padding-left:16em;
+  }
+}
+
 #video{
+  img{
+    width: 50em;
+  }
 	@include outer-container();
 	@include my-padding();
 	text-align:center;
@@ -55,6 +70,14 @@
     padding: 3em;
     width: 100%;
     height: 100%;
+}
+
+.social-ul{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0em 4em;
 }
 
 .footer-icon{

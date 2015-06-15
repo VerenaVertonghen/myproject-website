@@ -23,11 +23,16 @@
 
 
 	&:hover{
-		background: lighten($background,10%);
+		// background: lighten($background,10%);
+		background: darken($background,10%);
 		border:none;
 	}
 }
 
 .btn {
 	@include my-button($light, $positive);
+}
+
+.btn-dark {
+	@include my-button($light, $dark);
 }
